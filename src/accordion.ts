@@ -1,9 +1,11 @@
 export default class Accordeon {
-    constructor(public parent: any) {
 
+    constructor(private parent: JQuery) {
+        if (!parent[0]) {
+            throw new TypeError('Parent element should be a valid DOM node');
+        }
     }
-    greet(): void {
-        console.log('greet');
+    greet(text: string): void {
+        this.parent.append(text);
     }
 }
-

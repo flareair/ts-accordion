@@ -1,5 +1,9 @@
+import * as $ from 'jquery';
 import Accordion from './accordion';
 
-let accordion: Accordion = new Accordion({});
+$(document).ready(() => {
+    let parent: JQuery = $('.container');
+    let accordion: Accordion = new Accordion(parent);
 
-accordion.greet();
+    accordion.greet('Hello!');
+});

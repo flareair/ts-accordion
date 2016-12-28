@@ -9,10 +9,11 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.ts$/, loader: 'ts-loader'}
+            { test: /\.ts$/, loader: 'awesome-typescript-loader'}
         ]
     },
     resolve: {
         extensions: ['.ts', '.js']
-    }
+    },
+    devtool: 'source-map'
 };

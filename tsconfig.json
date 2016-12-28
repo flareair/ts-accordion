@@ -2,9 +2,16 @@
     "compilerOptions": {
         "module": "commonjs",
         "noImplicitAny": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "types": [
+            "jquery"
+        ]
     },
     "filesGlob": [
         "./src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
     ]
 }

@@ -1,5 +1,5 @@
-import Accordeon from './accordeon';
+import Accordion from './accordion';
 
-let accordeon: Accordeon = new Accordeon({});
+let accordion: Accordion = new Accordion({});
 
-accordeon.greet();
+accordion.greet();

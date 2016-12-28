@@ -67,7 +67,19 @@
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 0 */,
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var accordion_1 = __webpack_require__(2);
+var accordion = new accordion_1["default"]({});
+accordion.greet();
+
+
+/***/ },
+/* 2 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -83,17 +95,6 @@ var Accordeon = (function () {
 }());
 exports.__esModule = true;
 exports["default"] = Accordeon;
-
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var accordeon_1 = __webpack_require__(0);
-var accordeon = new accordeon_1["default"]({});
-accordeon.greet();
 
 
 /***/ }

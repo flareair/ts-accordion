@@ -4,6 +4,7 @@ module.exports = {
     entry: './src/app.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     module: {
@@ -13,5 +14,5 @@ module.exports = {
     },
     resolve: {
         extensions: ['.ts', '.js']
-    },
+    }
 };

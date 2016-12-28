@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack.config.js",
-    "watch": "webpack --config webpack.config.js --watch",
-    "server": "webpack-dev-server --content-base src/"
+    "watch": "webpack --config webpack.config.js --watch"
   },
   "author": "flareair",
   "license": "MIT",
   "devDependencies": {
+    "copy-loader": "^0.1.3",
+    "file-loader": "^0.9.0",
     "ts-loader": "^1.3.3",
     "typescript": "^2.1.4",
-    "webpack": "^2.1.0-beta.28",
-    "webpack-dev-server": "^2.1.0-beta.12"
+    "webpack": "^2.1.0-beta.28"
   }
 }

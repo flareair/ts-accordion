@@ -8,5 +8,5 @@ $(document).ready(() => {
     let parent: JQuery = $('.container');
     let accordion: Accordion = new Accordion(parent);
 
-    accordion.init();
+    accordion.draw();
 });

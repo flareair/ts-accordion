@@ -7,7 +7,7 @@ export default class Accordeon {
             throw new TypeError('Parent element should be a valid DOM node');
         }
     }
-    init(): void {
+    draw(): void {
         this.parent.append(template);
     }
 }

@@ -29,6 +29,10 @@ module.exports = {
             {
                 test: /\.html$/,
                 loader: 'html-loader'
+            },
+            {
+                test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif)(\?\S*)?$/,
+                loader: 'file-loader?limit=30000&name=[name]-[hash].[ext]'
             }
         ]
     },

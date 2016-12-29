@@ -1,6 +1,9 @@
 /* basic styles */
-
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
 @import '../node_modules/normalize.css/normalize.css';
+// @import '../node_modules/font-awesome/scss/font-awesome.scss';
+@import 'variables.scss';
 
 .container {
     margin: 0 auto;

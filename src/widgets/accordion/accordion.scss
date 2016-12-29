@@ -1,1 +1,43 @@
 /* Accordion styles */
+@import '../../variables.scss';
+
+$accordionWidth: 300px;
+$defaultPadding: 10px 20px;
+
+.accordion {
+    width: $accordionWidth;
+    font-size: 13px;
+}
+.accordion__heading {
+    background: $gray;
+    cursor: default;
+    font-weight: bold;
+    padding: $defaultPadding;
+    text-transform: uppercase;
+}
+.accordion__body {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.accordion__element-heading {
+    background: $gray-light;
+    cursor: pointer;
+    padding: $defaultPadding;
+}
+.accordion__element-content {
+    background: $gray-lighter;
+    display: none;
+    padding: $defaultPadding;
+}
+.accordion__element_expanded {
+    .accordion__element-content {
+        display: block;
+    }
+    .accordion__element-icon {
+        transform: rotate(90deg);
+    }
+}
+.accordion__element-icon {
+    float: right;
+}

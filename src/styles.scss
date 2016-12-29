@@ -1,0 +1,9 @@
+/* basic styles */
+
+@import '../node_modules/normalize.css/normalize.css';
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 800px;
+}

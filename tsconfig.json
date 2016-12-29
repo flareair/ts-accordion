@@ -3,8 +3,10 @@
         "module": "commonjs",
         "noImplicitAny": true,
         "sourceMap": true,
+        "target": "es5",
         "types": [
-            "jquery"
+            "jquery",
+            "node"
         ]
     },
     "filesGlob": [

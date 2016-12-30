@@ -1,1 +1,1 @@
-## Simple accordion widget
+# Simple accordion widget

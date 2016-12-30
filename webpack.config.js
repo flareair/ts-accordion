@@ -8,7 +8,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         app: './app.ts',
-        vendor: ['jquery']
+        vendor: ['jquery', 'faker']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

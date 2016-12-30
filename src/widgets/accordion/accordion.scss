@@ -25,14 +25,21 @@ $defaultPadding: 10px 20px;
     cursor: pointer;
     padding: $defaultPadding;
 }
-.accordion__element-content {
+.accordion__element-body {
     background: $gray-lighter;
-    display: none;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.accordion__element-content {
     padding: $defaultPadding;
 }
+.accordion__element-icon {
+    transition: 0.1s linear;
+}
 .accordion__element_expanded {
-    .accordion__element-content {
-        display: block;
+    .accordion__element-body {
+        max-height: 1000px;
     }
     .accordion__element-icon {
         transform: rotate(90deg);

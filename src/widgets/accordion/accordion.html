@@ -1,6 +1,14 @@
-<div class="accordion">
+<div id="<%=id%>" class="accordion">
     <div class="accordion__heading">
         <%=title%>
+    </div>
+    <div class="accordion__controls">
+        <a href="#" class="accordion__expand-all">
+            <i class="fa fa-angle-double-down"></i> Expand All
+        </a>
+        <a href="#" class="accordion__collapse-all">
+            <i class="fa fa-angle-double-up"></i> Collapse All
+        </a>
     </div>
     <ul class="accordion__body">
         <% _.forEach(data, function(item) { %>
@@ -10,7 +18,7 @@
                         <%=item.heading %>
                     </div>
                     <div class="accordion__element-icon">
-                        <i class="fa fa-angle-right"></i>
+                        <i class="fa fa-caret-left"></i>
                     </div>
                 </div>
                 <div class="accordion__element-body">

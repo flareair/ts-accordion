@@ -5,8 +5,9 @@ $accordionWidth: 300px;
 $defaultPadding: 10px 20px;
 
 .accordion {
-    width: $accordionWidth;
+    color: $font-default;
     font-size: 13px;
+    width: $accordionWidth;
 }
 .accordion__heading {
     background: $gray;
@@ -56,6 +57,17 @@ $defaultPadding: 10px 20px;
     white-space: nowrap;
     width: 90%;
 }
+.accordion__controls {
+    padding: $defaultPadding;
+}
+.accordion__collapse-all,
+.accordion__expand-all {
+    color: $font-default;
+    text-decoration: none;
+}
+.accordion__collapse-all {
+    float: right;
+}
 // expanded element state
 .accordion__element_expanded {
     .accordion__element-body {
@@ -63,7 +75,7 @@ $defaultPadding: 10px 20px;
     }
     .accordion__element-icon {
         i.fa {
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
         }
     }
 }

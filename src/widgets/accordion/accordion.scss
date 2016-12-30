@@ -24,6 +24,12 @@ $defaultPadding: 10px 20px;
     background: $gray-light;
     cursor: pointer;
     padding: $defaultPadding;
+
+    &:after {
+        clear: both;
+        content: ' ';
+        display: table;
+    }
 }
 .accordion__element-body {
     background: $gray-lighter;
@@ -35,14 +41,30 @@ $defaultPadding: 10px 20px;
     padding: $defaultPadding;
 }
 .accordion__element-icon {
-    transition: 0.1s linear;
+    float: left;
+    text-align: right;
+    width: 10%;
+
+    i.fa {
+        transition: 0.1s linear;
+    }
 }
+.accordion__element-heading-text {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+}
+// expanded element state
 .accordion__element_expanded {
     .accordion__element-body {
         max-height: 1000px;
     }
     .accordion__element-icon {
-        transform: rotate(90deg);
+        i.fa {
+            transform: rotate(90deg);
+        }
     }
 }
 .accordion__element-icon {
